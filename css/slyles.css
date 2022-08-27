@@ -69,8 +69,11 @@ contacts:focus {
 .contacts:focus{
     color: var(--accent-color);
 }
-.section{
-    background-color: var(--primary-background-color);
+.footer{
+    background-color: var(--primary-background-color) ;
+}
+.main{
+    background-color: var(--primary-background-color) ;
 }
 .main-title{
     font-weight: 900;
