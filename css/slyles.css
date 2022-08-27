@@ -27,12 +27,14 @@ body{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    text-decoration: none;
 }
 .link{
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--title-text-color) ;
+    color: var(--title-text-color);
+    text-decoration: none;
 }
 .logo-header{
     color: #000000;
@@ -63,7 +65,8 @@ contacts:focus {
 .footer .contacts,
 .address{
     font-style: normal;
-     color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
 }
 .contacts:hover,
 .contacts:focus{
@@ -104,6 +107,7 @@ contacts:focus {
 }
 .sub-title{
     font-weight: 700;
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--title-text-color);
@@ -129,10 +133,6 @@ contacts:focus {
 color: var(--accent-color);
 }
 
-
-
-
-
 .button{
     font-weight: 500;
     font-size: 16px;
@@ -150,6 +150,9 @@ color: var(--accent-color);
  background-color: var(--accent-color);
 ;
 }
+.section{
+    text-decoration: none;
+}
 .portfolio-title{
     font-weight: 700;
     font-size: 18px;
@@ -160,4 +163,7 @@ color: var(--accent-color);
 .portfolio-text{
     font-size: 16px;
     line-height: 1.9;
+    color: var(--main-text-color);
 }
+
+
