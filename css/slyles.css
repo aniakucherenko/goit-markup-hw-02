@@ -1,9 +1,26 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
 :root {
     --primary-text-color: #FFFFFF;
     --title-text-color: #212121;
     --main-text-color: #757575;
     --accent-color: #2196F3;
-    --primary-background-color: #2F303A;
+    --primary-background-color: #2F303A; 
+}
+    
+.list{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
 }
 body{
     color: var(--main-text-color);
@@ -16,12 +33,21 @@ body{
     font-size: 14px;
     letter-spacing: 0.03em;
 }
-
-.list {
-    list-style: none;
+.header{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #eeeeee;
+}
+.nav{
+    display: flex;
+    align-items: center;
 }
 
+
 .logo-link{
+    display:block;
     color: var(--accent-color);
     font-family: Raleway;
     font-weight: 700;
@@ -39,46 +65,74 @@ body{
 .logo-header{
     color: #000000;
 }
+
+.logo-link{
+    display:block;
+}
 .logo-footer{
     color: var(--primary-text-color)
 }
+.site-nav{
+    display: flex;
+    margin-left: 93px;
+}
+.site-nav > .item{
+    margin-left:auto;
+}
+.site-nav>.item:not(:last-child) {
+    margin-right: 50px;
+}
+.contacts{
+    display:flex;
+    margin-left: auto;
+}
+.contacts > .item + .item{
+    margin-left: 50px;
+}
+
 
 .site-nav .link{
   color: var(--title-text-color);
 }
+.contacts .link {
+    color: var(--main-text-color)
+}
+.site-nav .link,
+.contacts .link {
+ display: block;
+ padding-top: 32px;
+ padding-bottom: 32px;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus,
-.contacts:hover,
-contacts:focus {
+.contacts .link:hover,
+contacts .link:focus {
  color: var(--accent-color);
 }
 .link.current {
     color: var(--accent-color);
 }
-.contacts{
-    font-weight: 500;
-    line-height: 1.12;
-    letter-spacing: 0.02em;   
-    color: var(--main-text-color);
-    text-decoration: none;
-}
+
+
 .footer .contacts,
 .address{
     font-style: normal;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
-.contacts:hover,
-.contacts:focus{
-    color: var(--accent-color);
-}
+
 .footer{
-    background-color: var(--primary-background-color) ;
+    background-color: var(--primary-background-color);
 }
 .main{
-    background-color: var(--primary-background-color) ;
+    background-color: var(--primary-background-color);
+    text-align: center;
+
 }
 .main-title{
+    margin-top:0;
+    margin-bottom: 40px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.37;
@@ -88,12 +142,14 @@ contacts:focus {
     color: var(--primary-text-color);
 }
 .order{
+    text-align: center;
+    align-items: center;
+    padding: 10px 32px;
+    border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    display: flex;
-    align-items: center;
-    text-align: center;
+
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: var(--accent-color) ;
@@ -112,7 +168,6 @@ contacts:focus {
     text-transform: uppercase;
     color: var(--title-text-color);
 }
-.text{}
 .team-name{
     font-weight: 500;
     font-size: 16px;
@@ -130,7 +185,7 @@ contacts:focus {
 }
 .address:hover,
 .adress:focus{
-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 .button{
@@ -141,13 +196,13 @@ color: var(--accent-color);
     color: var(--title-text-color);
     background-color: #F5F4FA;
     font-family: inherit;
-    display:inline-block;
+    display: inline-block;
     cursor: pointer;
 }
 .button:hover,
 .button:focus{
- color: var(--primary-text-color);
- background-color: var(--accent-color);
+    color: var(--primary-text-color);
+    background-color: var(--accent-color);
 ;
 }
 .portfolio-title{
@@ -163,7 +218,21 @@ color: var(--accent-color);
     color: var(--main-text-color);
 }
 .portfolio-link{
-text-decoration: none;
+    text-decoration: none;
+}
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+.container{
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
 }
 
+.team{
+    background-color: #F5F4FA;
+}
 

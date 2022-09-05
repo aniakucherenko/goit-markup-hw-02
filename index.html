@@ -9,34 +9,41 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./portfolio.html">
     <link rel="stylesheet" href="./css/slyles.css">
 </head>
 <body>
     <header>
-        <!--header-->
+        <!--header--> 
+        <div class="container header">
+            <nav class="nav">
         <a class="logo-link" href="./index.html">Web<span class="logo-header">Studio</span></a>
-        <nav>
          <ul class="site-nav list">
-            <li><a class="link current" href="">Студія</a></li>
-            <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="link" href="">Контакти</a></li>
+            <li class="item"><a class="link current" href="">Студія</a></li>
+            <li class="item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="item"><a class="link" href="">Контакти</a></li>
         </ul>
         </nav>
-        <a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+        <ul class="contacts list">
+        <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+        </div>
     </header>
     <main>
-        <!--Main1-->
-        <section class="main">
+        <!--Main-->
+        <section class="section main">
+            <div class="container">
             <h1 class="main-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
             <button type="button" class="order">Замовити послугу</button>
+            </div>
             </section>
         
-        <!--Main2-->
-        
-          <!--Part1-->
-          <section>
+          <section class="section">
+            <div class="container">
             <h2>Пріорітети</h2>
             <ul class="list">
                 <li><h3 class="sub-title">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -53,18 +60,22 @@
                     <p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
             </ul>
+            </div>
         </section>
-        <!--Part2-->
-        <section>
+        <!--Чим ми займаємось-->
+        <section class="section">
+            <div class="container">
            <h2 class="title">Чим ми займаємося</h2>
            <ul class="list">
            <li><img src="images/code.jpg" alt="coding" width="370" height ="294"></li>
            <li><img src="images/test.jpg" alt="testing" width="370" height ="294"></li>
            <li><img src="images/design.jpg" alt="design" width="370" height ="294"></li>
             </ul>
+            </div>
        </section>
-        <!--Main3-team-->
-        <section>
+        <!--Наша команда-->
+        <section class="section team">
+            <div class="container ">
             <h2 class="title">Наша команда</h2>
             <ul class="list">
              <li><img src="images/img1.jpg" alt="team-member1" width="270" height ="260"/>
@@ -83,10 +94,13 @@
                <h3 class="team-name">Михайло Єрмаков</h3>
                <p class="team-text">Designer</p></li>  
              </ul> 
+            </div>
         </section>
+        
     </main>
     <!--footer-->
     <footer class="footer">
+        <div class="container">
 <a class="logo-link" href="./index.html">Web<span class="logo-footer">Studio</span></a>
 <address><ul class="list">
     <li><a class="address" href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+02000/@50.4265841,30.5361918,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
@@ -94,6 +108,7 @@
    <li><a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
    <li><a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
   </ul></address>
+</div>
     </footer>
 
 </body>
