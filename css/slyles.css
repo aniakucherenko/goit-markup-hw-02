@@ -20,7 +20,6 @@ html{
     display: flex;
     margin: 0;
     padding: 0;
-
 }
 body{
     color: var(--main-text-color);
@@ -155,6 +154,8 @@ contacts .link:focus {
     background-color: var(--accent-color) ;
 }
 .title{
+    margin-top:0;
+    margin-bottom:50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -162,12 +163,42 @@ contacts .link:focus {
     color: var(--title-text-color);
 }
 .sub-title{
+    margin-bottom: 10px;
+    margin-top: 0;
+
+    padding: 0;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--title-text-color);
 }
+.text{
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+.img-item:not(last-child){
+    margin-right: 30px;
+}
+.img-item{
+    background-color: #FFFFFF;
+}
+.image{
+    margin-bottom:30px;
+}
+.team-name{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.team-text{
+    margin-top: 0;
+margin-bottom: 30px;
+}
+
+.list-item:not(:last-child){
+    margin-right:30px;
+}
+
 .team-name{
     font-weight: 500;
     font-size: 16px;
@@ -223,16 +254,26 @@ contacts .link:focus {
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
-
+}
+.section:nth-child(2){
+    padding-bottom:47px;
+}
+.section:nth-child(3){
+    padding-top:47px;
 }
 .container{
     width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
-    margin: 0 auto;
+    margin:0 auto;
 }
 
 .team{
     background-color: #F5F4FA;
 }
-
+.header{
+    background-color: #FFFFFF;
+}
+.work{
+    background-color: #F5F5F5;
+}
